@@ -1,4 +1,6 @@
 import Link from 'next/link';
+
+// styles
 import styles from './Header.module.css'
 
 export function Header() {
