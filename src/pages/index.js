@@ -1,8 +1,9 @@
+// Next.js
 import Head from 'next/head'
 
 // components
 import { Header } from '../components/Header'
-import { Main } from '../components/Main'
+import { Main } from '../components/main'
 
 export default function Home() {
   return (
