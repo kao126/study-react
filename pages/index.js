@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Styles from "../styles/Home.module.css"
-
 
 // components
+import { Header } from '../components/Header'
 import { Main } from '../components/Main'
 
 export default function Home() {
@@ -14,6 +13,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <Main link={"pages/index.js"} />
     </>
   )
