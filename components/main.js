@@ -1,36 +1,14 @@
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from './Main.module.css'
 
 // components
-import { List } from './list'
+import { Links } from './Links'
+import { Headline } from './Headline'
 
 export function Main({ link }) {
   return (
     <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>{link}</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
+      <Headline link={link} />
       <div className={styles.center}>
         <Image
           className={styles.logo}
@@ -50,7 +28,7 @@ export function Main({ link }) {
           />
         </div>
       </div>
-      <List />
+      <Links />
     </main>
   )
 }

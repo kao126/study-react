@@ -1,9 +1,9 @@
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
+import styles from './Links.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export function List() {
+export function Links() {
   return (
     <>
       <div className={styles.grid}>
