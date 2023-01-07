@@ -3,9 +3,9 @@ import Head from 'next/head'
 
 // components
 import { Header } from '../components/Header'
-import { Main } from '../components/main'
+import { Main } from '../components/Main.jsx'
 
-export default function About() {
+export default function Home() {
   return (
     <>
       <Head>
@@ -15,7 +15,7 @@ export default function About() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Main link={"pages/about.js"} />
+      <Main link={"pages/index.js"} />
     </>
   )
 }
