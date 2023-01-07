@@ -2,11 +2,11 @@
 import Image from 'next/image'
 
 // components
-import { Links } from './Links'
-import { Headline } from './Headline'
+import { Headline } from 'src/components/Headline'
+import { Links } from 'src/components/Links'
 
 // styles
-import styles from './Main.module.css'
+import styles from 'src/components/Main/Main.module.css'
 
 export function Main({ link }) {
   return (
