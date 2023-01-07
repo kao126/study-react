@@ -2,7 +2,7 @@
 import Head from 'next/head'
 
 // React
-import { useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 // components
 import { Header } from 'src/components/Header'
@@ -10,18 +10,16 @@ import { Main } from 'src/components/Main'
 
 
 export default function Home() {
-  // const foo = 1;
-  // const handleClick = useCallback((e) => {
-  //   console.log(e.target.href);
-  //   e.preventDefault();
-  //   alert(foo);
-  // }, []);
+  const [count, setCount] = useState(1);
+
+  const handleClick = (e) => {
+    setCount(count => count + 1);
+    setCount(count => count + 1);
+  };
 
   useEffect(() => {
-    console.log("マウント時");
     document.body.style.backgroundColor = "lightblue";
     return () => {
-      console.log("アンアマウント時");
       document.body.style.backgroundColor = "";
     };
   }, []);
@@ -32,12 +30,8 @@ export default function Home() {
         <title>Index Page</title>
       </Head>
       <Header />
-      {/* <a
-        href="/about"
-        onClick={handleClick}
-      >
-        ボタン
-      </a> */}
+      <h1>{count}</h1>
+      <button href="/about" onClick={handleClick}>ボタン</button>
       <Main link={"pages/index.js"} />
     </>
   )
