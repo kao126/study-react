@@ -1,12 +1,12 @@
 // Next.js
-import Image from 'next/image'
+import Image from "next/image";
 
 // components
-import { Headline } from 'src/components/Headline'
-import { Links } from 'src/components/Links'
+import { Headline } from "src/components/Headline";
+import { Links } from "src/components/Links";
 
 // styles
-import styles from 'src/components/Main/Main.module.css'
+import styles from "src/components/Main/Main.module.css";
 
 export function Main({ link }) {
   return (
@@ -22,16 +22,10 @@ export function Main({ link }) {
           priority
         />
         <div className={styles.thirteen}>
-          <Image
-            src="/thirteen.svg"
-            alt="13"
-            width={40}
-            height={31}
-            priority
-          />
+          <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
         </div>
       </div>
       <Links />
     </main>
-  )
+  );
 }

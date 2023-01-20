@@ -1,8 +1,8 @@
 // Next.js
-import Link from 'next/link';
+import Link from "next/link";
 
 // styles
-import styles from 'src/components/Header/Header.module.css'
+import styles from "src/components/Header/Header.module.css";
 
 export function Header() {
   return (
@@ -14,5 +14,5 @@ export function Header() {
         <span className={styles.anchor}>About</span>
       </Link>
     </header>
-  )
+  );
 }

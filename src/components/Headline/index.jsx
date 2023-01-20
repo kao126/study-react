@@ -1,8 +1,8 @@
 // Next.js
-import Image from 'next/image'
+import Image from "next/image";
 
 // styles
-import styles from 'src/components/Headline/Headline.module.css'
+import styles from "src/components/Headline/Headline.module.css";
 
 export function Headline({ link }) {
   return (
@@ -17,7 +17,7 @@ export function Headline({ link }) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          By{' '}
+          By{" "}
           <Image
             src="/vercel.svg"
             alt="Vercel Logo"
@@ -29,5 +29,5 @@ export function Headline({ link }) {
         </a>
       </div>
     </div>
-  )
+  );
 }

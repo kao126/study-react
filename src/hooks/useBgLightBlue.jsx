@@ -1,5 +1,5 @@
 // React
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export const useBgLightBlue = () => {
   useEffect(() => {
@@ -8,4 +8,4 @@ export const useBgLightBlue = () => {
       document.body.style.backgroundColor = "";
     };
   }, []);
-}
+};

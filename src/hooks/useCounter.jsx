@@ -1,5 +1,5 @@
 // React
-import { useCallback, useState } from 'react';
+import { useCallback, useState } from "react";
 
 export const useCounter = () => {
   const [count, setCount] = useState(1);
@@ -16,4 +16,4 @@ export const useCounter = () => {
   }, []);
 
   return { count, isShow, handleClick, handleDisplay };
-}
+};

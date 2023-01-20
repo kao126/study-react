@@ -1,8 +1,8 @@
 // Next.js
-import Head from 'next/head'
+import Head from "next/head";
 
 // styles
-import 'src/styles/globals.css'
+import "src/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,5 +14,5 @@ export default function App({ Component, pageProps }) {
       </Head>
       <Component {...pageProps} />
     </>
-  )
+  );
 }
